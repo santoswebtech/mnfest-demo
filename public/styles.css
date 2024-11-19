@@ -1,0 +1,235 @@
+body {
+    background-color: black;
+    color: #b5b5b5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+}
+
+header>div {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+#logo {
+    width: 70px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav>a {
+    color: #b5b5b5;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 3px;
+}
+
+#nav>a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+#donateBtn {
+    font-weight: bold;
+    color: black !important;
+    background-color: white !important;
+    border-radius: 5%;
+    line-height: 9px;
+    height: 30px;
+    margin-top: 10px !important;
+    margin-left: 9px !important;
+    padding: 10px !important;
+}
+
+#donateBtn:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+#mobileDonateBtn {
+    font-weight: bold !important;
+}
+
+#navToggle, #mobileNav { 
+    display: none;
+}
+
+section>h2 {
+    margin-bottom: 50px;
+}
+
+#igFeed {
+    text-align: center;
+}
+
+#consultModal {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    padding: 5% 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    overflow: scroll;
+}
+
+#serviceContent {
+    margin: 5%;
+    max-width: 700px;
+}
+
+#consultClose, #serviceClose {
+    text-decoration: none;
+    max-width: 110px;
+    z-index: 1;
+}
+
+#consultModal>a, #serviceModal>a {
+    color: #b5b5b5;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 3px;
+}
+
+#consultModal>a:hover, #serviceModal>a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#heroImage {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(black, rgba(0, 0, 0, .3),rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, .3), rgba(0, 0, 0, .7), rgba(0, 0, 0, .9), black, black), url(Assets/manifestLogo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position-x: -150px; */
+}
+
+#heroText {
+    text-align: center;
+    margin-top: -150px;
+    font-family: "Yellowtail", cursive;
+    font-size: 3rem;
+}
+
+#about {
+    font-size: 20px;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 180px 20px;
+}
+
+footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 30px 15px;
+}
+
+#socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+}
+
+.socialLink {
+    color: #b5b5b5;
+    margin-bottom: 40px;
+}
+
+.socialLink:hover {
+    color: white;
+}
+
+#footerText {
+    text-align: center;
+    font-size: 1rem;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 800px)  {
+    #nav { 
+        display: none;
+    }
+    #navToggle { 
+        display: inline;
+        padding: 10px;
+        border-radius: 3px;
+        color: white;
+        margin: 3px;
+    }
+    #navToggle:hover { 
+        background-color: white;
+        color: black;
+    }
+    #mobileNav {
+        position: absolute;
+        width: 100%;
+        background-color: black;
+        color: white;
+        animation: fadeInAnimation .5s;
+        z-index: 2;
+    }
+    #mobileNav>a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 3px;
+    }
+    #mobileNav>a:hover {
+        background-color: white;
+        color: black;
+    }
+    #hero {
+        height: 40vh;
+    }
+    #heroImage {
+        background: url(Assets/manifestLogo.png) no-repeat;
+        background-size: 100%;
+        height: 40vh;
+    }
+    #heroText {
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+}
