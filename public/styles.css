@@ -173,6 +173,10 @@ footer {
     font-size: 1rem;
 }
 
+#footerBtn {
+    margin-right: 40px;
+}
+
 #footerBtn>a {
     font-size: 1rem;
     font-weight: bold;
@@ -252,6 +256,7 @@ footer {
     }
     #footerBtn {
         order: 3;
+        margin-right: unset;
     }
     #footerText {
         order: 3;
