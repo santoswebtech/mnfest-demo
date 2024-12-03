@@ -1,6 +1,6 @@
 body {
-    background-color: black;
-    color: #b5b5b5;
+    background-color: white;
+    color: black;
 }
 
 header {
@@ -20,7 +20,7 @@ header>div {
 }
 
 #logo {
-    width: 70px;
+    width: 100px;
 }
 
 #nav {
@@ -29,7 +29,7 @@ header>div {
 }
 
 #nav>a {
-    color: #b5b5b5;
+    color: black;
     text-decoration: none;
     padding: 10px;
     font-size: 1rem;
@@ -37,15 +37,13 @@ header>div {
 }
 
 #nav>a:hover {
-    color: white;
+    color: rgb(126, 126, 126);
     font-weight: bold;
 }
 
 #donateBtn {
-    font-weight: bold;
-    color: black !important;
-    background-color: white !important;
-    border-radius: 5%;
+    background-color: rgb(190, 190, 190) !important;
+    border-radius: 15px;
     line-height: 9px;
     height: 30px;
     margin-top: 10px !important;
@@ -54,8 +52,8 @@ header>div {
 }
 
 #donateBtn:hover {
-    background-color: black !important;
-    color: white !important;
+    background-color: rgb(126, 126, 126) !important;
+    color: black !important;
 }
 
 #mobileDonateBtn {
@@ -64,14 +62,11 @@ header>div {
 
 #navToggle, #mobileNav { 
     display: none;
+    color: black;
 }
 
 section>h2 {
     margin-bottom: 50px;
-}
-
-#igFeed {
-    text-align: center;
 }
 
 #consultModal {
@@ -79,7 +74,7 @@ section>h2 {
     top: 0;
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: white;
     padding: 5% 0;
     display: none;
     flex-direction: column;
@@ -100,15 +95,15 @@ section>h2 {
 }
 
 #consultModal>a, #serviceModal>a {
-    color: #b5b5b5;
     text-decoration: none;
     padding: 10px;
     font-size: 1rem;
     margin: 3px;
+    color: black;
 }
 
 #consultModal>a:hover, #serviceModal>a:hover {
-    color: white;
+    color: rgb(126, 126, 126);
     font-weight: bold;
 }
 
@@ -124,7 +119,7 @@ section>h2 {
 #heroImage {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(black, rgba(0, 0, 0, .3),rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, .3), rgba(0, 0, 0, .7), rgba(0, 0, 0, .9), black, black), url(Assets/manifestLogo.png);
+    background: url(Assets/manifestLogo.png);
     background-repeat: no-repeat;
     background-size: 100%;
     /* background-position-x: -150px; */
@@ -135,18 +130,164 @@ section>h2 {
     margin-top: -150px;
     font-family: "Yellowtail", cursive;
     font-size: 3rem;
+    color: red;
 }
 
 #about {
     font-size: 20px;
-    max-width: 1000px;
-    text-align: center;
-    margin: 0 auto;
     padding: 180px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#about>div>h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#mission {
+    max-width: 1200px;
+}
+
+#solution {
+    background-color: rgb(190, 190, 190);
+}
+
+#igFeed {
+    text-align: center;
+    display: none;
+}
+
+#staffSection {
+    max-width: 1200px;
+    margin: 100px auto 10px;
+}
+
+#founder {
+    border-bottom: 1px solid;
+    margin-bottom: 60px;
+}
+
+#founderContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#profilePic {
+    height: 25vw;
+    width: 25vw;
+    background: url(Assets/profilePic.jpg) no-repeat center;
+    background-size: 100%;
+    border-radius: 50%;
+}
+
+#profilePic, #profileText {
+    padding: 60px;
+}
+
+#profileText {
+    max-width: 60%;
+    font-size: 1.3rem;
+}
+
+#staffRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+#staffDetails {
+    display: flex;
+}
+
+.positionDetail {
+    width: 14vw;
+}
+
+.positionDetail>h5 {
+    font-style: italic;
+}
+
+.positionDetail>p {
+    color: red;
+}
+
+#programTiles {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto 100px;
+}
+.programTileLink {
+    display: inline-block;
+}
+
+.programTile {
+    height: 23vw;
+    width: 20vw;
+    border-radius: 5%;
+}
+
+.businessTile {
+    background: url(Assets/businessTile.png) no-repeat;
+    background-position: center;
+    background-size: 106%;
+}
+
+.songwritingTile {
+    background: url(Assets/songwritingTile.png) no-repeat;
+    background-position: center;
+    background-size: 106%;
+}
+
+.beatTile {
+    background: url(Assets/beatTile.png) no-repeat;
+    background-position: center;
+    background-size: 106%;
+}
+.artistTile {
+    background: url(Assets/artistTile.png) no-repeat;
+    background-position: center;
+    background-size: 106%;
+}
+.eventsTile {
+    background: url(Assets/eventsTile.png) no-repeat;
+    background-position: center;
+    background-size: 106%;
+}
+.djTile {
+    background: url(Assets/djTile.png) no-repeat;
+    background-position: center;
+    background-size: 106%;
+}
+
+.programPage {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.programPage>h1 {
+    text-align: center;
+    font-family: "YellowTail", cursive;
+    font-size: 5rem;
+}
+.programPage>img {
+ width: 100%;   
+}
+
+.programRow {
+    margin: 90px;
+    padding-bottom: 59px;
+    border-bottom: 1px solid;
+}
+.programRow:nth-last-of-type(1) {
+    border-bottom: unset;
+}
+
+.programRow>h3 {
+    color: red;
 }
 
 footer {
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,11 +302,12 @@ footer {
 }
 
 .socialLink {
-    color: #b5b5b5;
+    background-color: white;
+    color: black;
 }
 
 .socialLink:hover {
-    color: white;
+    color: rgb(126, 126, 126);
 }
 
 #footerText {
@@ -179,14 +321,31 @@ footer {
 
 #footerBtn>a {
     font-size: 1rem;
-    font-weight: bold;
     color: black !important;
-    background-color: white !important;
-    border-radius: 5%;
+    background-color: rgb(190, 190, 190) !important;
+    border-radius: 15px;
     line-height: 9px;
     height: 30px;
     padding: 0 10px !important;
     text-decoration: none;
+}
+
+#footerBtn>a:hover {
+    background-color: rgb(126, 126, 126) !important;
+}
+.volunteerBtn {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background: rgb(190, 190, 190);
+    width: 100px;
+    border-radius: 15px;
+    margin: 50px auto;
+}
+.volunteerBtn:hover {
+    background: rgb(126, 126, 126);
+    color: black;
 }
 
 @keyframes fadeInAnimation {
@@ -198,7 +357,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 800px)  {
+@media screen and (max-width: 768px)  {
     #nav { 
         display: none;
     }
@@ -206,18 +365,16 @@ footer {
         display: inline;
         padding: 10px;
         border-radius: 3px;
-        color: white;
         margin: 3px;
     }
     #navToggle:hover { 
-        background-color: white;
-        color: black;
+        background-color: rgb(126, 126, 126);
     }
     #mobileNav {
         position: absolute;
         width: 100%;
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
         animation: fadeInAnimation .5s;
         z-index: 2;
     }
@@ -225,14 +382,13 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: white;
+        color: black;
         text-decoration: none;
         padding: 15px;
         border-radius: 3px;
     }
     #mobileNav>a:hover {
-        background-color: white;
-        color: black;
+        background-color: rgb(126, 126, 126);
     }
     #hero {
         height: 40vh;
@@ -245,6 +401,26 @@ footer {
     #heroText {
         margin-top: 30px;
         font-size: 1.5rem;
+    }
+    #about {
+        /* flex-direction: column;
+        justify-content: unset; */
+    }
+    #founder>h3, #founder>h4 {
+        text-align: center;
+    }
+    #founderContent {
+        flex-direction: column;
+    }
+    #profilePic, #profileText {
+        padding: 20px;
+    }
+    #profileText {
+        max-width: unset;
+    }
+    .programTile {
+        height: 100vw;
+        width: 90vw;
     }
     footer {
         flex-direction: column;
@@ -261,5 +437,25 @@ footer {
     #footerText {
         order: 3;
         margin-bottom: 40px;
+    }
+    #staffRow, #staffDetails {
+        flex-direction: column;
+    }
+    #staffDetails {
+        align-items: center;
+    }
+    #staffRow>h3 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .positionDetail {
+        width: unset;
+        text-align: center;
+    }
+    .programRow {
+        margin: 50px;
+    }
+    .programRow>h3 {
+        text-align: center;
     }
 }

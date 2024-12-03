@@ -16,31 +16,63 @@
     <!-- Navbar -->
     <header>
         <div>
-            <img id="logo" src="./Assets/manifestLogo.png" alt="Logo for Santos Web Technologies">
+            <a href="./index.html"><img id="logo" src="./Assets/manifestLogo.png" alt="Logo for Santos Web Technologies"></a>
         </div>
         <nav id="nav">
-            <a href="#about">ABOUT</a>
-            <a href="#">EVENTS</a>
-            <a onclick="openConsult()">CONTACT</a>
-            <a id="donateBtn" target="_blank" href="https://linktr.ee/manifestrecordings?fbclid=PAZXh0bgNhZW0CMTEAAaa6vWDuqvA_9-eE8C2vJwA-skFQMDhFFI7DaGH7VsMkZkug3rUA753aPnE_aem_bKw_U7NEPFrXUxN_lBxj1A">DONATE</a>
-        </nav>
-        <a id="navToggle" href="javascript:void(0);" class="icon" onclick="toggleNav()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </header>
-    <nav id="mobileNav">
-        <a href="#about" onclick="toggleNav()">ABOUT</a>
-        <a href="#">EVENTS</a>
-        <a onclick="openConsult()">CONTACT</a>
-        <a id="mobileDonateBtn" target="_blank" href="https://linktr.ee/manifestrecordings?fbclid=PAZXh0bgNhZW0CMTEAAaa6vWDuqvA_9-eE8C2vJwA-skFQMDhFFI7DaGH7VsMkZkug3rUA753aPnE_aem_bKw_U7NEPFrXUxN_lBxj1A">DONATE</a>
+          <a href="./index.html#about">MISSION</a>
+          <a href="./index.html#programTiles">PROGRAMS</a>
+          <a href="./staff.html">BOARD/STAFF</a>
+          <a href="./sponsor.html">SPONSOR</a>
+          <a href="./scholarships.html">SCHOLARSHIPS</a>
+          <a id="donateBtn" href="./donate.html">DONATE</a>
+      </nav>
+      <a id="navToggle" href="javascript:void(0);" class="icon" onclick="toggleNav()">
+          <i class="fa fa-bars"></i>
+      </a>
+  </header>
+  <nav id="mobileNav">
+      <a href="./index.html#about" onclick="toggleNav()">MISSION</a>
+      <a href="./index.html#programTiles" onclick="toggleNav()">PROGRAMS</a>
+      <a href="./staff.html" onclick="toggleNav()">BOARD/STAFF</a>
+      <a href="./sponsor.html" onclick="toggleNav()">SPONSOR</a>
+      <a href="./scholarships.html" onclick="toggleNav()">SCHOLARSHIPS</a>
+      <a id="mobileDonateBtn" target="_blank" href="./donate.html" onclick="toggleNav()">DONATE</a>
     </nav>
     <section id="hero">
         <div id="heroImage" alt="Manifest Academy Logo"></div>
-        <p id="heroText">"Lorem ipsum dolor"</p>
+        <p id="heroText">"Turning Dreams into Reality"</p>
     </section>
     <section id="about">
-        <h2>About Us</h2>
-        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos dolore tempore recusandae numquam harum perspiciatis, consequuntur expedita aut quaerat quas incidunt et, mollitia repellat reprehenderit velit ipsa explicabo? Sed, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur consequuntur consectetur excepturi impedit voluptas ut suscipit illum! Reiciendis ullam architecto adipisci molestias doloribus. Ipsum ratione minima ex maxime necessitatibus."</p>
+      <div id="mission">
+        <h2>Our Mission</h2>
+        <p>"Manifest Academy is a 501 (c)(3) nonprofit dedicated to enabling all youth
+          musicians to reach their full potential as productive, educated
+          professionals. We provide artist development, educational resources,
+          industry resources, and music mentorship for underserved youth.
+          Students aged 6-18 receive hands-on training in music theory, recording
+          arts, mental health development, and entrepreneurship. We achieve our
+          objectives by partnering with schools, recreation centers, juvenile
+          correctional facilities, and instructor led online courses."</p>
+      </div>
+    </section>
+    <section id="programTiles">
+      <h2>Explore Our Programs</h2>
+      <p>Manifest Academy offers 5 academic programs to enrich our students&#39;
+        futures. Youth benefit from expert faculty, an innovative curriculum, and
+        the resources of the Las Vegas music community.</p>
+      <div class="container">
+        <div class="row g-0 justify-content-center">
+          <div class="col-md-3 m-3"><a class="programTileLink" href="./business.html"><div class="programTile businessTile"></div></a></div>
+          <div class="col-md-3 m-3"><a class="programTileLink" href="./songwriting.html"><div class="programTile songwritingTile"></div></a></div>
+          <div class="col-md-3 m-3"><a class="programTileLink" href="#"><div class="programTile beatTile"></div></a></div>
+        </div>
+        <div class="row g-0 justify-content-center">
+          <div class="col-md-3 m-3"><a class="programTileLink" href="./artistdevelopment.html"><div class="programTile artistTile"></div></a></div>
+          <div class="col-md-3 m-3"><a class="programTileLink" href="./uprising.html"><div class="programTile eventsTile"></div></a></div>
+          <div class="col-md-3 m-3"><a class="programTileLink" href="./djprogram.html"><div class="programTile djTile"></div></a></div>
+        </div>
+      </div>
+
     </section>
     <aside id="consultModal">
         <a id="consultClose" href="javascript:void(0);" class="icon" onclick="closeConsult(this)">
@@ -74,16 +106,18 @@
             <button type="submit" class="btn btn-secondary" disabled>Submit</button>
           </form>
     </aside>
-    <section id="igFeed">
+    <section id="igFeed"> <!-- hidden-->
       <h2>What we've been up to...</h2>
       <script src="https://static.elfsight.com/platform/platform.js" async></script>
       <div class="elfsight-app-c9c6cb88-e343-4389-94a8-7d9e82295e8a" data-elfsight-app-lazy></div>
     </section>
     <footer>
         <div id="socials">
-          <a class="socialLink" href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="socialLink" href="https://www.facebook.com/people/Manifest-Academy-Las-Vegas/61569020168236/"><i class="fa-brands fa-facebook-f"></i></a>
           <a class="socialLink" href="https://www.instagram.com/manifest.academy/"><i class="fa-brands fa-instagram"></i></a>
-          <a class="socialLink" href=""><i class="fa-brands fa-youtube"></i></a>
+          <a class="socialLink" href="https://www.youtube.com/@manifest.academy"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/in/manifest-academy-las-vegas-79044933a/" class="socialLink"><i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div id="footerText">Manifest Academy</div>
         <div id="footerBtn"><a target="_blank" href="https://linktr.ee/manifestrecordings?fbclid=PAZXh0bgNhZW0CMTEAAaa6vWDuqvA_9-eE8C2vJwA-skFQMDhFFI7DaGH7VsMkZkug3rUA753aPnE_aem_bKw_U7NEPFrXUxN_lBxj1A">DONATE</a></div>
