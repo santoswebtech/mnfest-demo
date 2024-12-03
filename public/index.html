@@ -16,23 +16,27 @@
     <!-- Navbar -->
     <header>
         <div>
-            <img id="logo" src="./Assets/manifestLogo.png" alt="Logo for Santos Web Technologies">
+            <a href="./index.html"><img id="logo" src="./Assets/manifestLogo.png" alt="Logo for Santos Web Technologies"></a>
         </div>
         <nav id="nav">
-            <a href="#about">MISSION</a>
-            <a href="#programTiles">PROGRAMS</a>
-            <a onclick="openConsult()">CONTACT</a>
-            <a id="donateBtn" target="_blank" href="https://linktr.ee/manifestrecordings?fbclid=PAZXh0bgNhZW0CMTEAAaa6vWDuqvA_9-eE8C2vJwA-skFQMDhFFI7DaGH7VsMkZkug3rUA753aPnE_aem_bKw_U7NEPFrXUxN_lBxj1A">DONATE</a>
-        </nav>
-        <a id="navToggle" href="javascript:void(0);" class="icon" onclick="toggleNav()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </header>
-    <nav id="mobileNav">
-        <a href="#about" onclick="toggleNav()">MISSION</a>
-        <a href="#programTiles">PROGRAMS</a>
-        <a onclick="openConsult()">CONTACT</a>
-        <a id="mobileDonateBtn" target="_blank" href="https://linktr.ee/manifestrecordings?fbclid=PAZXh0bgNhZW0CMTEAAaa6vWDuqvA_9-eE8C2vJwA-skFQMDhFFI7DaGH7VsMkZkug3rUA753aPnE_aem_bKw_U7NEPFrXUxN_lBxj1A">DONATE</a>
+          <a href="./index.html#about">MISSION</a>
+          <a href="./index.html#programTiles">PROGRAMS</a>
+          <a href="./staff.html">BOARD/STAFF</a>
+          <a href="./sponsor.html">SPONSOR</a>
+          <a href="./scholarships.html">SCHOLARSHIPS</a>
+          <a id="donateBtn" href="./donate.html">DONATE</a>
+      </nav>
+      <a id="navToggle" href="javascript:void(0);" class="icon" onclick="toggleNav()">
+          <i class="fa fa-bars"></i>
+      </a>
+  </header>
+  <nav id="mobileNav">
+      <a href="./index.html#about" onclick="toggleNav()">MISSION</a>
+      <a href="./index.html#programTiles" onclick="toggleNav()">PROGRAMS</a>
+      <a href="./staff.html" onclick="toggleNav()">BOARD/STAFF</a>
+      <a href="./sponsor.html" onclick="toggleNav()">SPONSOR</a>
+      <a href="./scholarships.html" onclick="toggleNav()">SCHOLARSHIPS</a>
+      <a id="mobileDonateBtn" target="_blank" href="./donate.html" onclick="toggleNav()">DONATE</a>
     </nav>
     <section id="hero">
         <div id="heroImage" alt="Manifest Academy Logo"></div>
@@ -107,51 +111,6 @@
       <script src="https://static.elfsight.com/platform/platform.js" async></script>
       <div class="elfsight-app-c9c6cb88-e343-4389-94a8-7d9e82295e8a" data-elfsight-app-lazy></div>
     </section>
-    <!-- move staff to separate page -->
-    <!-- <section id="staffSection">
-      <div id="founder">
-        <h3 style="margin-bottom: 20px;">Rob Lacy</h3>
-        <h4 style="color: red;">Founder | CEO</h4>
-        <div id="founderContent">
-          <div id="profilePic"></div>
-          <div id="profileText">Robert Lacy is a dynamic and dedicated youth advocate with a
-            passion for empowering young musicians in Las Vegas, NV. With
-            over 20 years of experience as teacher, mentor, music producer,
-            event planner, he has become a driving force in creating
-            opportunities for youth in the community to explore their musical
-            talents and pursue their dreams.
-            As a music educator, Robert is committed to nurturing the next
-            generation of musicians through mentorship and education
-            programs. He dedicates his time to teach music classes,
-            workshops, and seminars, empowering youth with the skills and
-            knowledge they need to succeed in the industry. Through his
-            mentorship, many of his students have gone on to pursue careers
-            in music and continue to make meaningful contributions to their
-            communities.</div>
-        </div>
-      </div>
-      <div id="staffRow">
-        <h3>Staff</h3>
-        <div id="staffDetails">
-          <div class="positionDetail">
-            <h5>Anis Hauser</h5>
-            <p>Secretary</p>
-          </div>
-          <div class="positionDetail">
-            <h5>LaCresha McManus</h5>
-            <p>Treasurer</p>
-          </div>
-          <div class="positionDetail">
-            <h5>Forrest West</h5>
-            <p>Director</p>
-          </div>
-          <div class="positionDetail">
-            <h5>Kara Jenkins</h5>
-            <p>Director</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <footer>
         <div id="socials">
           <a class="socialLink" href="https://www.facebook.com/people/Manifest-Academy-Las-Vegas/61569020168236/"><i class="fa-brands fa-facebook-f"></i></a>
