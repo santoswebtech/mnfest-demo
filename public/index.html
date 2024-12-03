@@ -20,7 +20,7 @@
         </div>
         <nav id="nav">
             <a href="#about">MISSION</a>
-            <a href="./programs.html">PROGRAMS</a>
+            <a href="#programTiles">PROGRAMS</a>
             <a onclick="openConsult()">CONTACT</a>
             <a id="donateBtn" target="_blank" href="https://linktr.ee/manifestrecordings?fbclid=PAZXh0bgNhZW0CMTEAAaa6vWDuqvA_9-eE8C2vJwA-skFQMDhFFI7DaGH7VsMkZkug3rUA753aPnE_aem_bKw_U7NEPFrXUxN_lBxj1A">DONATE</a>
         </nav>
@@ -30,7 +30,7 @@
     </header>
     <nav id="mobileNav">
         <a href="#about" onclick="toggleNav()">MISSION</a>
-        <a href="./programs.html">PROGRAMS</a>
+        <a href="#programTiles">PROGRAMS</a>
         <a onclick="openConsult()">CONTACT</a>
         <a id="mobileDonateBtn" target="_blank" href="https://linktr.ee/manifestrecordings?fbclid=PAZXh0bgNhZW0CMTEAAaa6vWDuqvA_9-eE8C2vJwA-skFQMDhFFI7DaGH7VsMkZkug3rUA753aPnE_aem_bKw_U7NEPFrXUxN_lBxj1A">DONATE</a>
     </nav>
@@ -40,7 +40,7 @@
     </section>
     <section id="about">
       <div id="mission">
-        <h2>Mission</h2>
+        <h2>Our Mission</h2>
         <p>"Manifest Academy is a 501 (c)(3) nonprofit dedicated to enabling all youth
           musicians to reach their full potential as productive, educated
           professionals. We provide artist development, educational resources,
@@ -50,6 +50,25 @@
           objectives by partnering with schools, recreation centers, juvenile
           correctional facilities, and instructor led online courses."</p>
       </div>
+    </section>
+    <section id="programTiles">
+      <h2>Explore Our Programs</h2>
+      <p>Manifest Academy offers 5 academic programs to enrich our students&#39;
+        futures. Youth benefit from expert faculty, an innovative curriculum, and
+        the resources of the Las Vegas music community.</p>
+      <div class="container">
+        <div class="row g-0 justify-content-center">
+          <div class="col-md-3 m-3"><a class="programTileLink" href="./business.html"><div class="programTile businessTile"></div></a></div>
+          <div class="col-md-3 m-3"><a class="programTileLink" href="./songwriting.html"><div class="programTile songwritingTile"></div></a></div>
+          <div class="col-md-3 m-3"><a class="programTileLink" href="#"><div class="programTile beatTile"></div></a></div>
+        </div>
+        <div class="row g-0 justify-content-center">
+          <div class="col-md-3 m-3"><a class="programTileLink" href="./artistdevelopment.html"><div class="programTile artistTile"></div></a></div>
+          <div class="col-md-3 m-3"><a class="programTileLink" href="./uprising.html"><div class="programTile eventsTile"></div></a></div>
+          <div class="col-md-3 m-3"><a class="programTileLink" href="./djprogram.html"><div class="programTile djTile"></div></a></div>
+        </div>
+      </div>
+
     </section>
     <aside id="consultModal">
         <a id="consultClose" href="javascript:void(0);" class="icon" onclick="closeConsult(this)">
@@ -83,12 +102,13 @@
             <button type="submit" class="btn btn-secondary" disabled>Submit</button>
           </form>
     </aside>
-    <section id="igFeed">
+    <section id="igFeed"> <!-- hidden-->
       <h2>What we've been up to...</h2>
       <script src="https://static.elfsight.com/platform/platform.js" async></script>
       <div class="elfsight-app-c9c6cb88-e343-4389-94a8-7d9e82295e8a" data-elfsight-app-lazy></div>
     </section>
-    <section id="staffSection">
+    <!-- move staff to separate page -->
+    <!-- <section id="staffSection">
       <div id="founder">
         <h3 style="margin-bottom: 20px;">Rob Lacy</h3>
         <h4 style="color: red;">Founder | CEO</h4>
@@ -131,7 +151,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <footer>
         <div id="socials">
           <a class="socialLink" href="https://www.facebook.com/people/Manifest-Academy-Las-Vegas/61569020168236/"><i class="fa-brands fa-facebook-f"></i></a>

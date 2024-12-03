@@ -68,7 +68,6 @@ header>div {
 
 section>h2 {
     margin-bottom: 50px;
-    color: red;
 }
 
 #consultModal {
@@ -214,15 +213,66 @@ section>h2 {
     color: red;
 }
 
-#programs {
+#programTiles {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+.programTileLink {
+    display: inline-block;
+}
+
+.programTile {
+    height: 23vw;
+    width: 20vw;
+    border-radius: 5%;
+}
+
+.businessTile {
+    background: url(Assets/businessTile.png) no-repeat;
+    background-position: center;
+    background-size: 106%;
+}
+
+.songwritingTile {
+    background: url(Assets/songwritingTile.png) no-repeat;
+    background-position: center;
+    background-size: 106%;
+}
+
+.beatTile {
+    background: url(Assets/beatTile.png) no-repeat;
+    background-position: center;
+    background-size: 106%;
+}
+.artistTile {
+    background: url(Assets/artistTile.png) no-repeat;
+    background-position: center;
+    background-size: 106%;
+}
+.eventsTile {
+    background: url(Assets/eventsTile.png) no-repeat;
+    background-position: center;
+    background-size: 106%;
+}
+.djTile {
+    background: url(Assets/djTile.png) no-repeat;
+    background-position: center;
+    background-size: 106%;
+}
+
+.programPage {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-#programs>h1 {
+.programPage>h1 {
     text-align: center;
     font-family: "YellowTail", cursive;
     font-size: 5rem;
+}
+.programPage>img {
+ width: 100%;   
 }
 
 .programRow {
@@ -295,7 +345,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 800px)  {
+@media screen and (max-width: 768px)  {
     #nav { 
         display: none;
     }
@@ -352,6 +402,10 @@ footer {
     }
     #profileText {
         max-width: unset;
+    }
+    .programTile {
+        height: 100vw;
+        width: 90vw;
     }
     footer {
         flex-direction: column;
