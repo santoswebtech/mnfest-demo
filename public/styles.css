@@ -139,17 +139,16 @@ section>h2 {
     font-size: 20px;
     padding: 180px 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
 }
-
-#mission, #solution {
-    max-width: 50%;
-    padding: 50px;
+#about>div>h2 {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 #mission {
-    border: rgb(190, 190, 190) solid 3px;
+    max-width: 1200px;
 }
 
 #solution {
@@ -342,15 +341,17 @@ footer {
         font-size: 1.5rem;
     }
     #about {
+        /* flex-direction: column;
+        justify-content: unset; */
+    }
+    #founderContent {
         flex-direction: column;
-        justify-content: unset;
     }
-    #about>div>h2 {
-        text-align: center;
+    #profilePic, #profileText {
+        padding: 20px;
     }
-    #mission, #solution {
+    #profileText {
         max-width: unset;
-        padding: 10px;
     }
     footer {
         flex-direction: column;
