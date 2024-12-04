@@ -110,27 +110,32 @@ section>h2 {
 #hero {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
 #heroImage {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background: url(Assets/manifestLogo.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    /* background-position-x: -150px; */
 }
 
 #heroText {
     text-align: center;
-    margin-top: -150px;
     font-family: "Yellowtail", cursive;
     font-size: 3rem;
     color: red;
+}
+#heroVideo {
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    aspect-ratio: 16/9;
+    background-color: black;
+    opacity: 0;
 }
 
 #about {
@@ -347,6 +352,9 @@ footer {
     background: rgb(126, 126, 126);
     color: black;
 }
+.fadeIn {
+    animation: fadeIn 3s 5s forwards;
+}
 
 @keyframes fadeInAnimation {
     0% {
@@ -356,7 +364,15 @@ footer {
         opacity: 1;
     }
 }
-
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ 
 @media screen and (max-width: 768px)  {
     #nav { 
         display: none;
@@ -401,6 +417,9 @@ footer {
     #heroText {
         margin-top: 30px;
         font-size: 1.5rem;
+    }
+    #heroVideo {
+        height: 40vh;
     }
     #about {
         /* flex-direction: column;
