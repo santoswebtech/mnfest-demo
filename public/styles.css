@@ -229,7 +229,7 @@ section>h2 {
 .programTile {
     height: 23vw;
     width: 20vw;
-    border-radius: 5%;
+    max-width: 300px;
 }
 
 .businessTile {
