@@ -357,6 +357,15 @@ footer {
     height: 400px;
     background: url(Assets/mnfstBlogHero.jpg) no-repeat;
     background-position: center;
+    background-size: cover;
+}
+#blogFooter {
+    height: 40px;
+    width: 100vw;
+    background-color: white;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
 }
 .fadeIn {
     animation: fadeIn 3s 5s forwards;
