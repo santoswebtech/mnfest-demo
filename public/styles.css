@@ -353,6 +353,11 @@ footer {
     background: rgb(126, 126, 126);
     color: black;
 }
+#blogHero {
+    height: 400px;
+    background: url(Assets/mnfstBlogHero.jpg) no-repeat;
+    background-position: center;
+}
 .fadeIn {
     animation: fadeIn 3s 5s forwards;
 }
