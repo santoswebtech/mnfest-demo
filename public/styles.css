@@ -191,6 +191,23 @@ section>h2 {
     background-repeat: no-repeat;
 }
 
+#howitworks>div {
+    width: 50%;
+    height: 600px;
+    background-color: black;
+    color: white;
+}
+.howitworksTitle {
+    font-family: Vina Sans, sans-serif;
+    font-size: 8rem;
+    line-height: 80px;
+}
+#homeVidThumb {
+    width: 34rem;
+    height: 18rem;
+    background-position: center;
+}
+
 .fadeIn {
     animation: fadeIn 3s 5s forwards;
 }
@@ -275,5 +292,17 @@ section>h2 {
     }
     .imgTile {
         height: 6rem;
+    }
+    #howitworks>div {
+        width: 100%;
+    }
+    .howitworksTitle {
+        font-size: 4.6rem;
+    }
+    #homeVidThumb {
+        width: 18rem;
+        height: 11rem;
+        background-position: center;
+        background-size: cover;
     }
 } 
