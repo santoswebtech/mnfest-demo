@@ -193,7 +193,6 @@ section>h2 {
 
 #howitworks>div {
     width: 50%;
-    height: 600px;
     background-color: black;
     color: white;
 }
@@ -206,6 +205,20 @@ section>h2 {
     width: 34rem;
     height: 18rem;
     background-position: center;
+}
+
+.phaseTitle {
+    font-family:  Vina Sans, sans-serif;
+    font-size: 4rem;
+    line-height: 60px;
+    color: red;
+}
+.phaseSubTitle {
+    font-family: Vina Sans, sans-serif;
+    font-size: 2rem;
+}
+.phaseDetails {
+    max-width: 300px;
 }
 
 .fadeIn {
