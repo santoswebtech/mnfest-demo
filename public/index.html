@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ranga:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
     <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16835064095"> </script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-16835064095'); </script>
 </head>
 <body>
@@ -21,117 +22,108 @@
             <a href="./index.html"><img id="logo" src="./Assets/manifestLogo.png" alt="Logo for Manifest Academy"></a>
         </div>
         <nav id="nav">
-          <a href="./index.html#about">MISSION</a>
-          <a href="./index.html#programTiles">PROGRAMS</a>
-          <a href="./staff.html">BOARD/STAFF</a>
-          <a href="./sponsor.html">SPONSOR</a>
-          <a href="./scholarships.html">SCHOLARSHIPS</a>
-          <a id="donateBtn" href="./donate.html">DONATE</a>
+          <a href="">ABOUT</a>
+          <a href="">MAAD: Artist Development</a>
+          <a href="">IMPACT</a>
+          <a href="">EVENTS</a>
+          <a href="">SUPPORT US</a>
+          <a href="">CONTACT</a>
+          <a id="donateBtn" href="./donate.html">DONATE NOW</a>
       </nav>
       <a id="navToggle" href="javascript:void(0);" class="icon" onclick="toggleNav()">
           <i class="fa fa-bars"></i>
       </a>
   </header>
   <nav id="mobileNav">
-      <a href="./index.html#about" onclick="toggleNav()">MISSION</a>
-      <a href="./index.html#programTiles" onclick="toggleNav()">PROGRAMS</a>
-      <a href="./staff.html" onclick="toggleNav()">BOARD/STAFF</a>
-      <a href="./sponsor.html" onclick="toggleNav()">SPONSOR</a>
-      <a href="./scholarships.html" onclick="toggleNav()">SCHOLARSHIPS</a>
-      <a id="mobileDonateBtn" target="_blank" href="./donate.html" onclick="toggleNav()">DONATE</a>
-    </nav>
-    <section id="hero">
-        <div id="heroImage" alt="Manifest Academy Logo"></div>
-        <p id="heroText">"Turning Dreams into Reality"</p>
-        <!-- <iframe 
-          id="heroVideo"
-          src="https://www.youtube.com/embed/nq-Tnbkhw4g?autoplay=1&mute=1&loop=1&enablejsapi=1"
-          title="YouTube video player" 
-          frameborder="0" 
-          allowfullscreen>
-        </iframe> -->
-    </section>
-    <section id="about">
-      <div id="mission">
-        <h2>Our Mission</h2>
-        <p>"Manifest Academy is a 501 (c)(3) nonprofit dedicated to enabling all youth
-          musicians to reach their full potential as productive, educated
-          professionals. We provide artist development, educational resources,
-          industry resources, and music mentorship for underserved youth.
-          Students aged 6-18 receive hands-on training in music theory, recording
-          arts, mental health development, and entrepreneurship. We achieve our
-          objectives by partnering with schools, recreation centers, juvenile
-          correctional facilities, and instructor led online courses."</p>
+      <a href="" onclick="toggleNav()">ABOUT</a>
+      <a href="" onclick="toggleNav()">MAAD: Artist Development</a>
+      <a href="" onclick="toggleNav()">IMPACT</a>
+      <a href="" onclick="toggleNav()">EVENTS</a>
+      <a href="" onclick="toggleNav()">SUPPORT US</a>
+      <a href="" onclick="toggleNav()">CONTACT</a>
+      <a id="mobileDonateBtn" target="_blank" href="./donate.html" onclick="toggleNav()">DONATE NOW</a>
+  </nav>
+  <aside id="consultModal">
+      <a id="consultClose" href="javascript:void(0);" class="icon" onclick="closeConsult(this)">
+          <p>CLOSE &nbsp;&nbsp;<i class="fa-regular fa-x"></i></p>
+        </a>
+        <form action="" method="POST" style="width: 90%; max-width: 600px;">
+          <div class="mb-3 row">
+            <div class="col-6">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="name" name="name" class="form-control" id="name" required>
+            </div>
+            <div class="col-6">
+              <label for="phone" class="form-label">Phone #</label>
+              <input type="phone" name="phone" class="form-control" id="phone" required>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <div class="col-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" id="email" required>
+            </div>
+            <div class="col-6">
+              <label for="date" class="form-label">Event Date</label>
+              <input type="date" name="date" class="form-control" id="date" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="description" id="description" style="height: 150px; width: 100%;" placeholder="How can we help you today..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary" disabled>Submit</button>
+        </form>
+  </aside>
+  <section id="hero">
+    <div id="heroContent" alt="Manifest Academy Logo">
+      <div class="heroLeft d-flex flex-column align-items-center p-3 p-md-5" style="color: white; background: rgba(0,0,0,.8);">
+          <div id="heroTitle">PASSION</div>
+          <div id="heroSubtitle">IS OFTEN MISUNDERSTOOD</div>
+          <p id="heroText">We believe every young artist deserves access to professional creative arts instruction, mentorship, and real performance opportunities. Through Manifest Academy Artist Development (MAAD), we provide youth ages 8–19 with a structured pathway from recording arts to publishing to the stage at no cost to participants, with cohorts offered based on program capacity.</p>
+          <div class="d-flex flex-column flex-md-row justify-content-md-evenly">
+            <a href="" class="heroBtn">DONATE NOW</a>
+            <a href="" class="heroBtn" style="background-color: red; color: white; font-weight: 700;">SIGN UP</a>
+          </div>
       </div>
-    </section>
-    <section id="programTiles">
-      <h2>Explore Our Programs</h2>
-      <p>Manifest Academy offers 5 academic programs to enrich our students&#39;
-        futures. Youth benefit from expert faculty, an innovative curriculum, and
-        the resources of the Las Vegas music community.</p>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md"><a class="programTileLink" href="./songwriting.html"><div class="programTile songwritingTile"></div></a></div>
-          <div class="col-md"><a class="programTileLink" href="./business.html"><div class="programTile businessTile"></div></a></div>
-          <div class="col-md"><a class="programTileLink" href="./artistdevelopment.html"><div class="programTile artistTile"></div></a></div>
-          <div class="col-md"><a class="programTileLink" href="./uprising.html"><div class="programTile eventsTile"></div></a></div>
-          <div class="col-md"><a class="programTileLink" href="./djprogram.html"><div class="programTile djTile"></div></a></div>
-        </div>
-        <!-- <div class="row justify-content-center">
-        </div> -->
+      <div class="w-50 d-none d-md-block"></div>
+    </div>
+    <!-- <iframe 
+      id="heroVideo"
+      src="https://www.youtube.com/embed/nq-Tnbkhw4g?autoplay=1&mute=1&loop=1&enablejsapi=1"
+      title="YouTube video player" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe> -->
+  </section>
+  <section id="whatwedo" class="d-flex flex-column flex-md-row">
+    <div id="whatwedoLeft" class="d-flex justify-content-center align-items-center">
+      <span>WHAT WE DO</span>
+    </div>
+    <div id="whatwedoRight">
+      <h2>A Professional Creative Arts Pathway for Youth</h2>
+      <p>Manifest Academy delivers a structured, cohort-based program that guides youth from skill development to rehearsal to the stage. Through MAAD, participants create original work, build confidence, and gain real performance experience in professional studios and event spaces. Programming is offered at no cost to participants, with cohorts scheduled based on program capacity.</p>
+      <img src="./Assets/maadLogo.png" alt="Logo for MAAD" height="150" width="300">
+    </div>
+  </section>
+  <!-- <section id="igFeed"> 
+    <h2>What we've been up to...</h2> 
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-c9c6cb88-e343-4389-94a8-7d9e82295e8a" data-elfsight-app-lazy></div>
+  </section> -->
+  <!-- <footer>
+      <div id="socials">
+        <a class="socialLink" href="https://www.facebook.com/people/Manifest-Academy-Las-Vegas/61569020168236/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="socialLink" href="https://www.instagram.com/manifest.academy/"><i class="fa-brands fa-instagram"></i></a>
+        <a class="socialLink" href="https://www.youtube.com/@manifest.academy"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/manifest-academy-las-vegas-79044933a/" class="socialLink"><i class="fa-brands fa-linkedin"></i>
+        </a>
       </div>
-
-    </section>
-    <aside id="consultModal">
-        <a id="consultClose" href="javascript:void(0);" class="icon" onclick="closeConsult(this)">
-            <p>CLOSE &nbsp;&nbsp;<i class="fa-regular fa-x"></i></p>
-          </a>
-          <form action="" method="POST" style="width: 90%; max-width: 600px;">
-            <div class="mb-3 row">
-              <div class="col-6">
-                <label for="name" class="form-label">Your Name</label>
-                <input type="name" name="name" class="form-control" id="name" required>
-              </div>
-              <div class="col-6">
-                <label for="phone" class="form-label">Phone #</label>
-                <input type="phone" name="phone" class="form-control" id="phone" required>
-              </div>
-            </div>
-            <div class="mb-3 row">
-              <div class="col-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" class="form-control" id="email" required>
-              </div>
-              <div class="col-6">
-                <label for="date" class="form-label">Event Date</label>
-                <input type="date" name="date" class="form-control" id="date" required>
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="description" class="form-label">Description</label>
-              <textarea name="description" id="description" style="height: 150px; width: 100%;" placeholder="How can we help you today..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-secondary" disabled>Submit</button>
-          </form>
-    </aside>
-    <section id="igFeed"> 
-      <!-- <h2>What we've been up to...</h2> -->
-      <script src="https://static.elfsight.com/platform/platform.js" async></script>
-      <div class="elfsight-app-c9c6cb88-e343-4389-94a8-7d9e82295e8a" data-elfsight-app-lazy></div>
-    </section>
-    <footer>
-        <div id="socials">
-          <a class="socialLink" href="https://www.facebook.com/people/Manifest-Academy-Las-Vegas/61569020168236/"><i class="fa-brands fa-facebook-f"></i></a>
-          <a class="socialLink" href="https://www.instagram.com/manifest.academy/"><i class="fa-brands fa-instagram"></i></a>
-          <a class="socialLink" href="https://www.youtube.com/@manifest.academy"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.linkedin.com/in/manifest-academy-las-vegas-79044933a/" class="socialLink"><i class="fa-brands fa-linkedin"></i>
-          </a>
-        </div>
-        <div id="footerText">Manifest Academy</div>
-        <div id="footerBtn"><a target="_blank" href="./donate.html">DONATE</a></div>
-        <!-- <aside>Built by Santos Web Technologies</aside> -->
-      </footer>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <div id="footerText">Manifest Academy</div>
+      <div id="footerBtn"><a target="_blank" href="./donate.html">DONATE</a></div>
+      <aside>Built by Santos Web Technologies</aside> 
+    </footer> -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

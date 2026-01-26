@@ -10,6 +10,14 @@ header {
     position: relative;
     z-index: 1;
     padding: 0 15px;
+    background-color: white;
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay at the top initially */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding */
+    /* Add padding/height specific to your design */
+    height: 80px;
+    border-bottom: 2px solid red;
 }
 
 header>div {
@@ -20,20 +28,20 @@ header>div {
 }
 
 #logo {
-    width: 100px;
+    width: 195px;
 }
 
 #nav {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #nav>a {
     color: black;
     text-decoration: none;
     padding: 10px;
-    font-size: 1rem;
-    margin: 3px;
+    font-size: 14px;
 }
 
 #nav>a:hover {
@@ -42,13 +50,14 @@ header>div {
 }
 
 #donateBtn {
-    background-color: rgb(190, 190, 190) !important;
+    background-color: red !important;
     border-radius: 15px;
     line-height: 9px;
     height: 30px;
-    margin-top: 10px !important;
     margin-left: 9px !important;
-    padding: 10px !important;
+    padding: 10px 20px !important;
+    color: white !important;
+    font-weight: 700;
 }
 
 #donateBtn:hover {
@@ -58,6 +67,11 @@ header>div {
 
 #mobileDonateBtn {
     font-weight: bold !important;
+    background-color: red !important;
+    max-width: 200px;
+    margin: auto;
+    border-radius: 25px !important;
+    color: white !important;
 }
 
 #navToggle, #mobileNav { 
@@ -83,18 +97,13 @@ section>h2 {
     overflow: scroll;
 }
 
-#serviceContent {
-    margin: 5%;
-    max-width: 700px;
-}
-
-#consultClose, #serviceClose {
+#consultClose {
     text-decoration: none;
     max-width: 110px;
     z-index: 1;
 }
 
-#consultModal>a, #serviceModal>a {
+#consultModal>a {
     text-decoration: none;
     padding: 10px;
     font-size: 1rem;
@@ -102,272 +111,66 @@ section>h2 {
     color: black;
 }
 
-#consultModal>a:hover, #serviceModal>a:hover {
+#consultModal>a:hover {
     color: rgb(126, 126, 126);
     font-weight: bold;
 }
 
 #hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+    margin-top: 80px;
 }
 
-#heroImage {
-    height: 80vh;
+#heroContent {
     width: 100%;
-    background: url(Assets/mafnifestLogo2.png);
+    background: linear-gradient(90deg,black, black, black, rgba(0,0,0,.9), rgba(0,0,0,.7), rgba(0,0,0,.5), rgba(0,0,0,.3)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg/1280px-Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg) no-repeat;
     background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-#heroText {
-    text-align: center;
-    font-family: "Ranga", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-    color: red;
-}
-#heroVideo {
-    position: absolute;
-    width: 100vw;
-    height: 90vh;
-    aspect-ratio: 16/9;
-    background-color: black;
-    opacity: 0;
-}
-
-#about {
-    font-size: 20px;
-    padding: 180px 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-#about>div>h2 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#mission {
-    max-width: 1200px;
-}
-
-#solution {
-    background-color: rgb(190, 190, 190);
-}
-
-#igFeed {
-    text-align: center;
-}
-
-#staffSection {
-    max-width: 1200px;
-    margin: 100px auto 10px;
-}
-
-#founder {
-    border-bottom: 1px solid;
-    margin-bottom: 60px;
-}
-
-#founderContent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#profilePic {
-    height: 25vw;
-    width: 25vw;
-    background: url(Assets/profilePic.jpg) no-repeat center;
-    background-size: 100%;
-    border-radius: 50%;
-}
-
-#profilePic, #profileText {
-    padding: 60px;
-}
-
-#profileText {
-    max-width: 60%;
-    font-size: 1.3rem;
-}
-
-#staffRow {
-    display: flex;
-    justify-content: space-between;
-}
-
-#staffDetails {
-    display: flex;
-}
-
-.positionDetail {
-    width: 14vw;
-}
-
-.positionDetail>h5 {
-    font-style: italic;
-}
-
-.positionDetail>p {
-    color: red;
-}
-
-#programTiles {
-    max-width: 1200px;
-    text-align: center;
-    margin: 0 auto 100px;
-}
-.programTileLink {
-    display: inline-block;
-}
-
-.programTile {
-    height: 20vw;
-    width: 15vw;
-    max-width: 215px;
-}
-
-.businessTile {
-    background: url(Assets/businessTile.png) no-repeat;
-    background-position: center;
-    background-size: 106%;
-}
-
-.songwritingTile {
-    background: url(Assets/songwritingTile.png) no-repeat;
-    background-position: center;
-    background-size: 106%;
-}
-
-.beatTile {
-    background: url(Assets/beatTile.png) no-repeat;
-    background-position: center;
-    background-size: 106%;
-}
-.artistTile {
-    background: url(Assets/artistTile.png) no-repeat;
-    background-position: center;
-    background-size: 106%;
-}
-.eventsTile {
-    background: url(Assets/eventsTile.png) no-repeat;
-    background-position: center;
-    background-size: 106%;
-}
-.djTile {
-    background: url(Assets/djTile.png) no-repeat;
-    background-position: center;
-    background-size: 106%;
-}
-
-.programPage {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.programPage>h1 {
-    text-align: center;
-    font-family: "YellowTail", cursive;
-    font-size: 5rem;
-}
-.programPage>img {
- width: 100%;   
-}
-
-.programRow {
-    margin: 90px;
-    padding-bottom: 59px;
-    border-bottom: 1px solid;
-}
-.programRow:nth-last-of-type(1) {
-    border-bottom: unset;
-}
-
-.programRow>h3 {
-    color: red;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.6rem;
-    padding: 30px 15px;
-}
-
-#socials {
-    display: flex;
-    justify-content: space-evenly;
-    width: 150px;
-}
-
-.socialLink {
-    background-color: white;
-    color: black;
-}
-
-.socialLink:hover {
-    color: rgb(126, 126, 126);
-}
-
-#footerText {
-    text-align: center;
-    font-size: 1rem;
-}
-
-#footerBtn {
-    margin-right: 40px;
-}
-
-#footerBtn>a {
-    font-size: 1rem;
-    color: black !important;
-    background-color: rgb(190, 190, 190) !important;
-    border-radius: 15px;
-    line-height: 9px;
-    height: 30px;
-    padding: 0 10px !important;
-    text-decoration: none;
-}
-
-#footerBtn>a:hover {
-    background-color: rgb(126, 126, 126) !important;
-}
-.volunteerBtn {
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    background: rgb(190, 190, 190);
-    width: 100px;
-    border-radius: 15px;
-    margin: 50px auto;
-}
-.volunteerBtn:hover {
-    background: rgb(126, 126, 126);
-    color: black;
-}
-#blogHero {
-    height: 400px;
-    width: 100%;
-    background: url(Assets/mnfstBlogHero.jpg) no-repeat;
-    background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-#blogFooter {
-    height: 40px;
-    width: 100%;
+
+.heroLeft {
+    width: 50%;
+}
+
+#heroTitle {
+    font-family: Vina Sans, sans-serif;
+    font-size: 10rem;
+    line-height: 140px;
+    max-width: 396px;
+}
+#heroSubtitle {
+    color: red;
+    font-size: 1.6rem;
+    font-weight: 700;
+    max-width: 400px;
+    letter-spacing: 2px;
+}
+#heroText {
+    max-width: 390px;
+}
+.heroBtn {
+    width: 160px;
+    padding: 10px 2px;
+    text-decoration: none;
     background-color: white;
-    margin-top: -30px;
-    position: relative;
-    z-index: 1;
+    margin: 4px 15px;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
 }
+
+#whatwedoLeft {
+    background-color: red;
+    font-size: 8rem;
+    color: white;
+    font-weight: 500;
+    font-family: 'Vina Sans';
+    line-height: 0.8;
+}
+
 .fadeIn {
     animation: fadeIn 3s 5s forwards;
 }
@@ -403,8 +206,9 @@ footer {
         background-color: rgb(126, 126, 126);
     }
     #mobileNav {
-        position: absolute;
+        position: fixed;
         width: 100%;
+        height: 100%;
         background-color: white;
         color: black;
         animation: fadeInAnimation .5s;
@@ -422,24 +226,24 @@ footer {
     #mobileNav>a:hover {
         background-color: rgb(126, 126, 126);
     }
-    #hero {
-        height: 40vh;
+    #heroContent {
+        background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg/1280px-Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg) no-repeat;
     }
-    #heroImage {
-        background: url(Assets/mafnifestLogo2.png) no-repeat;
-        background-size: 100%;
-        height: 40vh;
+    .heroLeft {
+        width: 100%;
+    }
+    #heroTitle {
+        font-size: 7rem;
+    }
+    #heroSubtitle {
+        font-size: 1.1rem;
     }
     #heroText {
-        margin-top: 30px;
-        font-size: 1.5rem;
+        max-width: 300px;
+        font-size: 20px;
     }
     #heroVideo {
         height: 40vh;
-    }
-    #about {
-        /* flex-direction: column;
-        justify-content: unset; */
     }
     #founder>h3, #founder>h4 {
         text-align: center;
@@ -493,4 +297,4 @@ footer {
     .programRow>h3 {
         text-align: center;
     }
-}
+} 
