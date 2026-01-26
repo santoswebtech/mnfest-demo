@@ -1,6 +1,8 @@
 body {
     background-color: white;
     color: black;
+    margin: 0 auto;
+    max-width: 1800px;
 }
 
 header {
@@ -169,6 +171,24 @@ section>h2 {
     font-weight: 500;
     font-family: 'Vina Sans';
     line-height: 0.8;
+    padding: 120px 80px;
+    width: 50%;
+} 
+#whatwedoRight {
+    width: 50%;
+    padding: 80px;
+    padding: 120px 80px;
+}
+#tilesLeft, #tilesRight {
+    width: 50%;
+    max-height: 300px;
+}
+.imgTile {
+    width: calc(100vw/3);
+    height: 10rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .fadeIn {
@@ -242,59 +262,18 @@ section>h2 {
         max-width: 300px;
         font-size: 20px;
     }
-    #heroVideo {
-        height: 40vh;
-    }
-    #founder>h3, #founder>h4 {
-        text-align: center;
-    }
-    #founderContent {
-        flex-direction: column;
-    }
-    #profilePic, #profileText {
-        padding: 20px;
-    }
-    #profileText {
-        max-width: unset;
-    }
-    .programTile {
-        height: 100vw;
-        width: 90vw;
-    }
-    footer {
-        flex-direction: column;
-    }
-    #socials {
+    #whatwedoLeft {
         width: 100%;
-        margin-bottom: 40px;
-        order: 1;
+        padding: 40px;
     }
-    #footerBtn {
-        order: 3;
-        margin-right: unset;
+    #whatwedoRight {
+        width: 100%;
+        padding: 40px;
     }
-    #footerText {
-        order: 3;
-        margin-bottom: 40px;
+    #tilesLeft, #tilesRight {
+        width: 100%;
     }
-    #staffRow, #staffDetails {
-        flex-direction: column;
-    }
-    #staffDetails {
-        align-items: center;
-    }
-    #staffRow>h3 {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .positionDetail {
-        width: unset;
-        text-align: center;
-    }
-    .programRow {
-        margin: 50px;
-    }
-    .programRow>h3 {
-        text-align: center;
+    .imgTile {
+        height: 6rem;
     }
 } 

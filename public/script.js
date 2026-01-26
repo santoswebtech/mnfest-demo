@@ -31,9 +31,6 @@ const feedbtn = document.querySelector('#igFeed>div>a')
 var prevScrollpos = window.pageYOffset;
 
 window.onscroll = () => {
-    if (document.querySelector('#igFeed').getBoundingClientRect().top < 500) {
-        document.querySelector('#igFeed>div>a').style.display = 'none';
-    }
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         document.querySelector("header").style.top = "0"; // Show navbar
