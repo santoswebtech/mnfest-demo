@@ -152,6 +152,7 @@ section>h2 {
 }
 #heroText {
     max-width: 390px;
+    font-size: 1.3rem;
 }
 .heroBtn {
     width: 160px;
@@ -195,6 +196,7 @@ section>h2 {
     width: 50%;
     background-color: black;
     color: white;
+    padding: 100px;
 }
 .howitworksTitle {
     font-family: Vina Sans, sans-serif;
@@ -220,6 +222,30 @@ section>h2 {
 .phaseDetails {
     max-width: 300px;
 }
+#impactLeft, #impactRight {
+    width: 50%;
+    padding: 3rem;
+    font-size: 1.3rem;
+}
+.impactTitle {
+    font-family: Vina Sans, sans-serif;
+    font-size: 8rem;
+    line-height: 80px;
+}
+#impactLeft {
+    background-color: red;
+    border-right: 3px solid black;
+}
+#impactLeftText {
+    color: white;
+}
+#impactRight {
+    border-left: 3px solid black;
+}
+#impactRight .impactTitle {
+    color: red;
+}
+
 
 .fadeIn {
     animation: fadeIn 3s 5s forwards;
@@ -290,7 +316,6 @@ section>h2 {
     }
     #heroText {
         max-width: 300px;
-        font-size: 20px;
     }
     #whatwedoLeft {
         width: 100%;
@@ -308,6 +333,7 @@ section>h2 {
     }
     #howitworks>div {
         width: 100%;
+        padding: 48px;
     }
     .howitworksTitle {
         font-size: 4.6rem;
@@ -317,5 +343,19 @@ section>h2 {
         height: 11rem;
         background-position: center;
         background-size: cover;
+    }
+    #impactLeft, #impactRight {
+        width: 100%;
+    }
+    #impactLeft {
+        border-right: unset;
+        border-bottom: 3px solid black;
+    }
+    #impactRight {
+        border-left: unset;
+        border-top: 3px solid black;
+    }
+    .impactTitle {
+        font-size: 4.6rem;
     }
 } 
