@@ -283,16 +283,40 @@ section>h2 {
     text-align: center;
     color: black;
 }
+footer {
+    padding: 70px 140px;
+}
 #footerLt {
     width: 33.33vw;
 }
+#footerCt>div a {
+    color: black;
+    text-decoration: none;
+}
+#footerCt>div a:hover {
+    color: rgb(126, 126, 126);
+    font-weight: bold;
+}
 #footerBtn {
     background-color: red !important;
-    border-radius: 15px;
+    border-radius: 45px;
     height: 30px;
-    padding: 10px 20px !important;
+    padding: 40px 50px !important;
     color: white !important;
     font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+#footerBtn:hover {
+    background-color: rgb(126, 126, 126) !important;
+    color: black !important;
+}
+.socialLink {
+    color: white;
+    background: black;
+    padding: 5px 10px;
+    font-size: 30px;
+    border-radius: 25px;
 }
 
 
@@ -422,6 +446,19 @@ section>h2 {
         width: 0;
     }
     #joinBtn {
+        align-self: center;
+    }
+    footer {
+        padding: 20px;
+    }
+    #footerLt {
+        width: 85vw;
+    }
+    #footerRt {
+        margin-top: 80px;
+        margin-bottom: 90px;
+    }
+    #socials {
         align-self: center;
     }
 } 
