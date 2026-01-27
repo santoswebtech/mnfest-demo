@@ -246,6 +246,18 @@ section>h2 {
     color: red;
 }
 
+#join {
+    height: 100vh;
+    background-image: url(./Assets/joinSinger.webp);
+    background-size: cover;
+    background-position: 450px -540px;
+    background-repeat: no-repeat;
+}
+#joinOverlay {
+    height:  100vh;
+    background: linear-gradient(90deg, black, black, rgba(0,0,0,.9), rgba(0,0,0,.6), rgba(0,0,0,.3));
+}
+
 
 .fadeIn {
     animation: fadeIn 3s 5s forwards;
