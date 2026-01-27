@@ -20,6 +20,7 @@ header {
     /* Add padding/height specific to your design */
     height: 80px;
     border-bottom: 2px solid red;
+    max-width: 1800px;
 }
 
 header>div {
@@ -247,16 +248,53 @@ section>h2 {
 }
 
 #join {
-    height: 100vh;
     background-image: url(./Assets/joinSinger.webp);
     background-size: cover;
     background-position: 450px -540px;
     background-repeat: no-repeat;
 }
 #joinOverlay {
-    height:  100vh;
     background: linear-gradient(90deg, black, black, rgba(0,0,0,.9), rgba(0,0,0,.6), rgba(0,0,0,.3));
 }
+.joinContent {
+    color: white;
+    width: 50%;
+}
+#joinOverlay>.joinContent:nth-child(1) {
+    background: rgba(0,0,0,.8);
+}
+#joinTitle {
+    font-family: Vina Sans, sans-serif;
+    font-size: 11rem;
+    line-height: 140px;
+    max-width: 396px;
+    margin-bottom: 50px;
+}
+#joinText {
+    font-size: 1.3rem;
+}
+#joinBtn {
+    width: 160px;
+    padding: 10px 2px;
+    text-decoration: none;
+    background-color: white;
+    margin: 4px 15px;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+}
+#footerLt {
+    width: 33.33vw;
+}
+#footerBtn {
+    background-color: red !important;
+    border-radius: 15px;
+    height: 30px;
+    padding: 10px 20px !important;
+    color: white !important;
+    font-weight: 700;
+}
+
 
 
 .fadeIn {
@@ -369,5 +407,21 @@ section>h2 {
     }
     .impactTitle {
         font-size: 4.6rem;
+    }
+    #join {
+        background-position: -40px -50px;
+    }
+    #joinOverlay {
+        background: linear-gradient(0deg, black, black, rgba(0,0,0,.9), rgba(0,0,0,.6), rgba(0,0,0,.3), rgba(0,0,0,.3));
+    }
+    #joinOverlay>.joinContent:nth-child(1) {
+        width: 100vw;
+        background: unset;
+    }
+    #joinOverlay>.joinContent:nth-child(2) {
+        width: 0;
+    }
+    #joinBtn {
+        align-self: center;
     }
 } 
