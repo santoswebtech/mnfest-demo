@@ -119,13 +119,18 @@ section>h2 {
     font-weight: bold;
 }
 
-#hero {
+.hero {
     margin-top: 80px;
 }
 
 #heroContent {
-    width: 100%;
     background: linear-gradient(90deg,black, black, black, rgba(0,0,0,.9), rgba(0,0,0,.7), rgba(0,0,0,.5), rgba(0,0,0,.3)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg/1280px-Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg) no-repeat;
+}
+#aboutContent {
+    background: linear-gradient(90deg,black, black, black, rgba(0,0,0,.9), rgba(0,0,0,.7), rgba(0,0,0,.5), rgba(0,0,0,.3)), url(./Assets/outdoorIntv.webp) no-repeat;
+}
+.heroContent {
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -138,20 +143,20 @@ section>h2 {
     width: 50%;
 }
 
-#heroTitle {
+.heroTitle {
     font-family: Vina Sans, sans-serif;
     font-size: 10rem;
     line-height: 140px;
     max-width: 396px;
 }
-#heroSubtitle {
+.heroSubtitle {
     color: red;
     font-size: 1.6rem;
     font-weight: 700;
     max-width: 400px;
     letter-spacing: 2px;
 }
-#heroText {
+.heroText {
     max-width: 390px;
     font-size: 1.3rem;
 }
@@ -376,19 +381,19 @@ footer {
     #mobileNav>a:hover {
         background-color: rgb(126, 126, 126);
     }
-    #heroContent {
+    .heroContent {
         background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg/1280px-Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg) no-repeat;
     }
     .heroLeft {
         width: 100%;
     }
-    #heroTitle {
+    .heroTitle {
         font-size: 7rem;
     }
-    #heroSubtitle {
+    .heroSubtitle {
         font-size: 1.1rem;
     }
-    #heroText {
+    .heroText {
         max-width: 300px;
     }
     #whatwedoLeft {
