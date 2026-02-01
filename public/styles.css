@@ -124,10 +124,14 @@ section>h2 {
 }
 
 #heroContent {
-    background: linear-gradient(90deg,black, black, black, rgba(0,0,0,.9), rgba(0,0,0,.7), rgba(0,0,0,.5), rgba(0,0,0,.3)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg/1280px-Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg) no-repeat;
+    background: linear-gradient(90deg,black, black, black, rgba(0,0,0,.9), rgba(0,0,0,.7), rgba(0,0,0,.5), rgba(0,0,0,.3)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg/1280px-Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #aboutContent {
-    background: linear-gradient(90deg,black, black, black, rgba(0,0,0,.9), rgba(0,0,0,.7), rgba(0,0,0,.5), rgba(0,0,0,.3)), url(./Assets/outdoorIntv.webp) no-repeat;
+    background: linear-gradient(90deg,black, black, black, rgba(0,0,0,.9), rgba(0,0,0,.7), rgba(0,0,0,.5), rgba(0,0,0,.3)), url(./Assets/outdoorIntv.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .heroContent {
     width: 100%;
@@ -198,7 +202,7 @@ section>h2 {
     background-repeat: no-repeat;
 }
 
-#howitworks>div {
+#howitworks>div, #ourapproach>div {
     width: 50%;
     background-color: black;
     color: white;
@@ -213,6 +217,12 @@ section>h2 {
     width: 34rem;
     height: 18rem;
     background-position: center;
+}
+#ourapproach .phaseTitle {
+    font-size: 3rem;
+}
+#ourapproach .phaseDetails {
+    max-width: 400px;
 }
 
 .phaseTitle {
@@ -381,11 +391,12 @@ footer {
     #mobileNav>a:hover {
         background-color: rgb(126, 126, 126);
     }
-    .heroContent {
+    #heroContent {
         background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg/1280px-Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg) no-repeat;
     }
     .heroLeft {
         width: 100%;
+        background: rgba(0,0,0,.8);
     }
     .heroTitle {
         font-size: 7rem;
@@ -410,7 +421,7 @@ footer {
     .imgTile {
         height: 6rem;
     }
-    #howitworks>div {
+    #howitworks>div, #ourapproach>div {
         width: 100%;
         padding: 48px;
     }
