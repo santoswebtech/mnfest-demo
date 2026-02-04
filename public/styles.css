@@ -333,7 +333,16 @@ footer {
     font-size: 30px;
     border-radius: 25px;
 }
-
+#boardHero {
+    background-image: url(./Assets/staffHero.png);
+    background-size: contain;
+    /* background-position: 450px -540px; */
+    background-repeat: no-repeat;
+    height: calc(100vw*.37);
+}
+.director>h5:last-child {
+    color: red;
+}
 
 
 .fadeIn {
