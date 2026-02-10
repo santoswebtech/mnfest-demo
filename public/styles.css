@@ -196,13 +196,20 @@ section>h2 {
     padding: 120px 80px;
 }
 
-#whereWeServeLeft {
+#whatWeProvide {
+    color: white;
+}
+
+#whereWeServeLeft, #whatWeProvideRight {
     font-size: 8rem;
     font-weight: 500;
     font-family: 'Vina Sans';
     line-height: 0.8;
     padding: 120px 80px;
     width: 50%;
+}
+#whatWeProvide {
+    text-align: right;
 }
 #tilesLeft, #tilesRight {
     width: 50%;
