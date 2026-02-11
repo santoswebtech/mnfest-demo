@@ -190,7 +190,7 @@ section>h2 {
     padding: 120px 80px;
     width: 50%;
 } 
-#whatwedoRight, #whereWeServeRight {
+#whatwedoRight, #whereWeServeRight, #whatWeProvideLeft, #outcomesWeTrackRight, #communityStagesLeft {
     width: 50%;
     padding: 80px;
     padding: 120px 80px;
@@ -200,7 +200,7 @@ section>h2 {
     color: white;
 }
 
-#whereWeServeLeft, #whatWeProvideRight {
+#whereWeServeLeft, #whatWeProvideRight, #outcomesWeTrackLeft, #communityStagesRight {
     font-size: 8rem;
     font-weight: 500;
     font-family: 'Vina Sans';
@@ -208,8 +208,12 @@ section>h2 {
     padding: 120px 80px;
     width: 50%;
 }
-#whatWeProvide {
+#whatWeProvide, #communityStages {
     text-align: right;
+}
+#communityStagesLeft img {
+    height: 3rem;
+    margin: 20px;
 }
 #tilesLeft, #tilesRight {
     width: 50%;
@@ -479,13 +483,22 @@ footer {
     .heroText {
         max-width: 300px;
     }
-    #whatwedoLeft, #whereWeServeLeft {
+    #whatwedoLeft, #whereWeServeLeft, #outcomesWeTrackLeft {
         width: 100%;
         padding: 40px;
     }
-    #whatwedoRight, #whereWeServeRight {
+    #whatwedoRight, #whereWeServeRight, #whatWeProvideLeft, #whatWeProvideRight, #outcomesWeTrackRight, #communityStagesRight, #communityStagesLeft {
         width: 100%;
         padding: 40px;
+    }
+    #whatWeProvideRight {
+    font-size: 6rem;
+    }
+    #outcomesWeTrackLeft {
+    font-size: 5rem;
+    }
+    #communityStagesRight {
+        font-size: 4rem;
     }
     #tilesLeft, #tilesRight {
         width: 100%;
