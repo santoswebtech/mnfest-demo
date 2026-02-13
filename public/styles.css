@@ -52,6 +52,11 @@ header>div {
     font-weight: bold;
 }
 
+#donatePartnerLeft, #donatePartnerRight {
+    display: flex;
+    flex-direction: column;
+}
+
 #donateBtn {
     background-color: red !important;
     border-radius: 15px;
@@ -127,7 +132,7 @@ section>h2 {
     margin-top: 80px;
 }
 
-#heroContent {
+#heroContent, #supportContent {
     background: linear-gradient(90deg,black, black, black, rgba(0,0,0,.9), rgba(0,0,0,.7), rgba(0,0,0,.5), rgba(0,0,0,.3)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg/1280px-Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -467,7 +472,7 @@ footer {
     #mobileNav>a:hover {
         background-color: rgb(126, 126, 126);
     }
-    #heroContent {
+    #heroContent, #supportContent {
         background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg/1280px-Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg) no-repeat;
     }
     .heroLeft {
