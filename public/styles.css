@@ -75,8 +75,25 @@ header>div {
     justify-content: center;
     align-items: center;
     padding: 5rem 10rem;
-    gap: 2rem;
+    gap: 3rem;
     color: white;
+    flex: 1;
+}
+#liveFund h2 {
+    color: red;
+    font-family: 'Vina Sans';
+    font-size: 3rem;
+}
+#liveFundLeft, #liveFundRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10rem;
+    gap: 2rem;
+    color: black;
+    background-color: white;
+    flex: 1;
 }
 
 #donateBtn {
@@ -458,6 +475,9 @@ footer {
     #donatePartnerRight {
         border-left: unset;
         border-top: 3px solid white;
+    }
+    #donatePartnerLeft, #donatePartnerRight, #liveFundLeft, #liveFundRight {
+        padding: 5rem 3rem;
     }
     #impactOverlay {
         background: unset;
