@@ -62,10 +62,14 @@ header>div {
     font-size: 5rem;
     color: black;
 }
-#donatePartnerLeft {
+#volunteerAmplify {
+    border-top: 6px solid white;
+    border-bottom: 6px solid white;
+}
+#donatePartnerLeft, #volunteerAmplifyLeft {
     border-right: 3px solid white;
 }
-#donatePartnerRight {
+#donatePartnerRight, #volunteerAmplifyRight {
     border-left: 3px solid white;
 }
 
@@ -79,10 +83,10 @@ header>div {
     color: white;
     flex: 1;
 }
-#liveFund h2 {
+#liveFund h2, #volunteerAmplify h2 {
     color: red;
     font-family: 'Vina Sans';
-    font-size: 3rem;
+    font-size: 5rem;
 }
 #liveFundLeft, #liveFundRight {
     display: flex;
@@ -93,6 +97,16 @@ header>div {
     gap: 2rem;
     color: black;
     background-color: white;
+    flex: 1;
+}
+#volunteerAmplifyLeft, #volunteerAmplifyRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10rem;
+    gap: 3rem;
+    color: white;
     flex: 1;
 }
 
@@ -468,15 +482,15 @@ footer {
         padding: 3rem;
         background: rgba(0,0,0,.8);
     }
-    #donatePartnerLeft {
+    #donatePartnerLeft, #volunteerAmplifyLeft {
         border-right: unset;
         border-bottom: 3px solid white;
     }
-    #donatePartnerRight {
+    #donatePartnerRight, #volunteerAmplifyRight {
         border-left: unset;
         border-top: 3px solid white;
     }
-    #donatePartnerLeft, #donatePartnerRight, #liveFundLeft, #liveFundRight {
+    #donatePartnerLeft, #donatePartnerRight, #liveFundLeft, #liveFundRight, #volunteerAmplifyLeft, #volunteerAmplifyRight{
         padding: 5rem 3rem;
     }
     #impactOverlay {
