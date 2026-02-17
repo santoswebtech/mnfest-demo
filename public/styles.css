@@ -52,10 +52,21 @@ header>div {
     font-weight: bold;
 }
 
+#donatePartner {
+    border-top: 6px solid white;
+    border-bottom: 6px solid white;
+}
+
 #donatePartner h2 {
     font-family: 'Vina Sans';
     font-size: 5rem;
     color: black;
+}
+#donatePartnerLeft {
+    border-right: 3px solid white;
+}
+#donatePartnerRight {
+    border-left: 3px solid white;
 }
 
 #donatePartnerLeft, #donatePartnerRight {
@@ -439,6 +450,14 @@ footer {
     #aboutContent>.heroLeft, #impactContent>.heroLeft {
         padding: 3rem;
         background: rgba(0,0,0,.8);
+    }
+    #donatePartnerLeft {
+        border-right: unset;
+        border-bottom: 3px solid white;
+    }
+    #donatePartnerRight {
+        border-left: unset;
+        border-top: 3px solid white;
     }
     #impactOverlay {
         background: unset;
