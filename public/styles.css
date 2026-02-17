@@ -52,9 +52,20 @@ header>div {
     font-weight: bold;
 }
 
+#donatePartner h2 {
+    font-family: 'Vina Sans';
+    font-size: 5rem;
+    color: black;
+}
+
 #donatePartnerLeft, #donatePartnerRight {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10rem;
+    gap: 2rem;
+    color: white;
 }
 
 #donateBtn {
