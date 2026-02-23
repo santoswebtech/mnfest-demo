@@ -176,6 +176,11 @@ section>h2 {
     color: rgb(126, 126, 126);
     font-weight: bold;
 }
+ #contactContent {
+    background: linear-gradient(90deg,black, black, black, rgba(0,0,0,.9), rgba(0,0,0,.7), rgba(0,0,0,.5), rgba(0,0,0,.3)), url(./Assets/cherryCokeSinger.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
 
 #founder img {
     margin: 0 1rem 1rem 0;
