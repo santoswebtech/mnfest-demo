@@ -1,6 +1,9 @@
 body {
     background-color: white;
     color: black;
+}
+
+.centered {
     margin: 0 auto;
     max-width: 1800px;
 }
@@ -20,7 +23,6 @@ header {
     /* Add padding/height specific to your design */
     height: 80px;
     border-bottom: 2px solid red;
-    max-width: 1800px;
 }
 
 header>div {
@@ -190,11 +192,66 @@ section>h2 {
 #contactContent {
     background: url(./Assets/cherryCokeSinger.webp);
     background-repeat: no-repeat;
-    background-position: 0px -90vh;
-    background-size: 150%;
-    height: 100vh;
+    background-position: 25vw -70vh;
+    background-size: 130%;
+    height: 98.5vh;
     width: 100vw;
 }
+
+#formLayoutWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: -100px;
+}
+
+#formContainer {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    box-shadow: rgba(0,0,0,.4) 3px 3px 30px;
+}
+
+#contactSubmit {
+    background-color: black;
+}
+#contactSubmit:hover {
+    background-color: rgb(126, 126, 126) !important;
+    color: black !important;
+}
+
+#contactInfo {
+    height: 400px;
+    width: 400px;
+    padding-top: 40px;
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+#description {
+    height: 150px;
+    width: 100px;
+    border: 1px solid #ced4da;
+}
+
+#description:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+}
+
+.triangle {
+    width: 120px;
+    height: 60px;
+    background-color: black;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: absolute;
+    bottom: 20px;
+    margin-left: 100px;
+}
+
 
 #founder img {
     margin: 0 1rem 1rem 0;
@@ -502,7 +559,7 @@ footer {
         background: rgba(0,0,0,.8);
     }
     #contactContent {
-        background-position: -123vw -80vh;
+        background-position: -123vw -57vh;
         background-size: 400%;
         height: 114vh;
     }
@@ -527,6 +584,13 @@ footer {
     #impactContent {
         height: unset;
         background-position: unset;
+    }
+    #formLayoutWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    #formContainer {
+        width: 100%;
     }
     #founder img {
         margin: 0 0 1rem 0;
