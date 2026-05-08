@@ -75,12 +75,15 @@
           <button type="submit" class="btn btn-secondary" disabled>Submit</button>
         </form>
   </aside>
-  <section id="contactHero" class="hero">
-    <div id="contactOverlay" class="heroContent">
-      <div class="heroLeft d-flex flex-column align-items-center align-items-md-start p-3 p-md-5" style="color: white;">
-          <div class="heroTitle">CONTACT</div>
-          <div class="heroSubtitle mt-5 mb-3">Inquiries</div>
-          <p class="heroText" style="margin-top: 1rem;">Manifest Academy is a Las Vegas 501(c)(3) nonprofit providing youth ages 8–19 with artistic discovery, mentorship, publishing education, and public performance opportunities through Manifest Academy Artist Development (MAAD). If you want to refer youth, partner, sponsor, or host an event, we would love to connect.</p>
+  <section id="hero" class="hero">
+    <div id="heroContent" class="heroContent" alt="Manifest Academy Logo">
+      <div class="heroLeft d-flex flex-column align-items-left p-3 p-md-5" style="color: white;">
+          <div class="d-flex align-items-center" style="gap: 10px; margin-bottom: 10px;">
+            <div class="heroTitle">MAAD</div>
+            <img src="Assets/redGradHat.png" alt="image of red graduation hat" style="height: 60px; rotate: 15deg; margin-top: 30px;">
+          </div>
+          <div class="heroSubtitle" style="font-size: .8rem; max-width: 500px;">MANIFEST ACADEMY ARTIST DEVELOPMENT</div>
+          <p class="heroText" style="margin-top: 1rem;">Sign up to join the MAAD interest list. We accept sign ups year round and offer cohorts based on program capacity. Get updates on enrollment, events, and new opportunities as they open.</p>
           <div class="d-flex flex-column flex-md-row justify-content-md-evenly">
             <a href="" class="heroBtn">DONATE NOW</a>
             <a href="" class="heroBtn" style="background-color: red; color: white; font-weight: 700;">SIGN UP</a>
@@ -88,46 +91,102 @@
       </div>
       <div class="w-50 d-none d-md-block"></div>
     </div>
-    <div id="contactContent" alt="Manifest Academy Logo">
+  </section>
+  <section id="overview" class="p-3 p-md-5">
+    <div class="overviewBG"></div>
+    <div class="ovContent d-flex flex-column align-items-center" style="padding: 40px 0;">
+        <h1 style="font-family: Vina Sans, sans-serif; font-size: 60px;" class="text-center">PROGRAM OVERVIEW</h1>
+        <p style="max-width: 600px; font-size: 20px; padding: 30px 0;"><span style="color: red;">MAAD</span> is a nonprofit youth music program in Las Vegas providing professional instruction, mentorship, recoding, and real stage experience. MAAD is a structured, cohort-based artist development program that translates creative drive into disciplined artistic growth and real-world performance skills.</p>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-md-5">
+            <span style="font-family: Vina Sans, sans-serif; font-size: 60px;">CREATE</span>
+            <span style="font-family: Vina Sans, sans-serif; font-size: 60px;">PRACTICE</span>
+            <span style="font-family: Vina Sans, sans-serif; font-size: 60px;">PERFORM</span>
+        </div>
+        <a href="" class="joinBtn mt-5" style="background-color: red; color: white; font-weight: 700;">SIGN UP</a>
     </div>
   </section>
-  <section>
-    <div style="padding: 50px 20px;">
-      <div id="formLayoutWrapper">
-        <div id="formContainer">
-          <form action="" method="POST">
-            <div class="mb-3 row">
-              <div class="col">
-                <label for="name" class="form-label">Your Name</label>
-                <input type="name" name="name" class="form-control" id="name" required>
-              </div>
-            </div>
-            <div class="mb-3 row">
-              <div class="col-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" class="form-control" id="email" required>
-              </div>
-              <div class="col-6">
-                <label for="phone" class="form-label">Phone #</label>
-                <input type="phone" name="phone" class="form-control" id="phone" required>
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="description" class="form-label">Description</label>
-              <textarea name="description" id="description" style="height: 150px; width: 100%; border: 1px solid #ced4da;" placeholder="How can we help you today..."></textarea>
-            </div>
-            <button type="submit" id="contactSubmit" class="btn btn-secondary" style="border-radius: 20px; padding: 5px 20px;">Submit <i class="fa-solid fa-paper-plane" style="rotate: 54deg;"></i></button>
-          </form>
-        </div>
-        <div id="contactInfo" style="height: 400px; width: 400px; padding-top: 40px;">
-          <h2 style="margin-bottom: 40px;">Contact Us</h2>
-          <p style="margin-bottom: 40px;"><i class="fa-brands fa-instagram" style="color: white; background-color: black; border-radius: 25px; padding: 4px;"></i> @manifest.academy<br></p>
-          <p><i class="fa-regular fa-envelope" style="color: white; background-color: black; border-radius: 25px; padding: 4px;"></i> manifestacademyinfo@gmail.com</p>
-          <div class="triangle"></div>
-        </div>
-      </div>
+  <section id="servecost" class="d-flex flex-column flex-md-row justify-content-center">
+    <div class="whoweserve w-100 w-md-50 p-2 p-md-5" style="background-color: red;">
+        <h1 style="font-family: Vina Sans, sans-serif; font-size: 10rem; color: white; line-height: 8rem;">WHO WE <br>SERVE</h1>
+        <p style="max-width: 600px; font-size: 20px; padding: 30px 0; color: white;"><span style="color: black; font-weight: bold;">MAAD</span> serves youth ages 8–19 across the Las Vegas Valley, especially young people who have fewer opportunities and need a positive, supportive outlet. Many participants are connected to schools, recreation centers, community organizations, public agencies, or juvenile justice programs, and they join through referrals from trusted partners and families.</p>
     </div>
-    <div style="background-color: red; height: 160px;"></div>
+    <style>
+        @media screen and (max-width: 768px) {
+            #costaccess {
+                font-size: 6rem !important;
+            }
+            #costampersand {
+                font-size: 5.5rem !important;
+            }
+        }
+    </style>
+    <div class="cost w-100 w-md-50 p-2 p-md-5" style="background-color: black;">
+        <h1 id="costaccess" style="font-family: Vina Sans, sans-serif; font-size: 10rem; color: white; line-height: 7rem;">COST <span id="costampersand" style="font-weight: bold; font-family: sans-serif; font-size: 9.5rem;">&</span> ACCESS</h1>
+        <p style="max-width: 600px; font-size: 20px; padding: 30px 0; color: white;"><span style="color: red;">MAAD</span> is provided at no cost to participants, with cohorts offered based on program capacity. Program delivery is funded through grants, donations, and community partnerships that cover instruction, facility access, production, documentation, and program coordination so youth can participate regardless of financial situation.</p>    
+    </div>
+  </section>
+  <style>
+    .imgTile {
+        width: calc(100vw/3);
+        height: 24rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @media screen and (max-width: 768px) {
+        .imgTile {
+            width: 100%;
+            height: 20rem;
+        }
+    }
+  </style>
+  <section id="imgTiles" class="d-flex flex-column flex-md-row">
+      <div class="imgTile" style="background-image: url('./Assets/whiteJacketGuitar.webp'); background-position: 0 -30px;"></div>
+      <div class="imgTile" style="background-image: url('./Assets/greyHoodRapper.webp'); background-position: 0 -180px;"></div>
+      <div class="imgTile" style="background-image: url('./Assets/armyPantsSInger.webp'); background-position: 0 -90px;"></div>
+  </section>
+  <style>
+    #outcomes h3 {
+        color: red;
+        font-weight: bold;
+    }
+    @media screen and (max-width: 768px) {
+        #outcomesTitle {
+            font-size: 7rem !important;
+        }
+    }
+  </style>
+  <section id="outcomes">
+    <div class="p-2 p-md-5 d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+        <h1 id="outcomesTitle" style="font-family: Vina Sans, sans-serif; font-size: 8rem;">OUTCOMES</h1>
+        <img src="./Assets/maadLogo.png" alt="Logo for MAAD" height="120" width="240">
+    </div>
+    <div class="d-flex flex-column flex-md-row">
+        <div class="d-flex flex-column p-2 p-md-5 w-100 w-md-50 gap-3">
+            <div>
+                <h3>Original creative works produced</h3>
+                <p>Youth write and record authentic songs. Perform live to reflect their voice and growth.</p>
+            </div>
+            <div>
+                <h3>Public performance experience</h3>
+                <p>Participants gain real stage experience that builds comfort, presence, and professionalism.</p>
+            </div>
+            <div>
+                <h3>Cohort completion tracking</h3>
+                <p>We track attendance and milestones to ensure youth finish strong and to measure program effectiveness.</p>
+            </div>
+        </div>
+        <div class="d-flex flex-column p-2 p-md-5 w-100 w-md-50">
+            <div>
+                <h3>Professional photo/video documentation</h3>
+                <p>Each cohort receives quality media assets that support portfolios, promotion, and reporting.</p>
+            </div>
+            <div>
+                <h3>Increased confidence and engagement</h3>
+                <p>Youth use art and expression to process emotions, build self awareness, and develop healthier ways to cope and communicate.</p>
+            </div>
+        </div>
+    </div>
   </section>
   <footer class="d-flex flex-column">
     <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center" style="border-bottom: 2px solid red;">

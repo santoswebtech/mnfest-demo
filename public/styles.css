@@ -265,6 +265,7 @@ section>h2 {
     background: linear-gradient(90deg,black, black, black, rgba(0,0,0,.9), rgba(0,0,0,.7), rgba(0,0,0,.5), rgba(0,0,0,.3)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg/1280px-Downtown_Container_Park_-_Downtown_-_Las_Vegas%2C_NV_%2812427672184%29.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 #aboutContent {
     background: linear-gradient(90deg,black, black, black, rgba(0,0,0,.9), rgba(0,0,0,.7), rgba(0,0,0,.5), rgba(0,0,0,.3)), url(./Assets/outdoorIntv.webp);
@@ -472,7 +473,7 @@ section>h2 {
 #joinText {
     font-size: 1.3rem;
 }
-#joinBtn {
+.joinBtn {
     width: 160px;
     padding: 10px 2px;
     text-decoration: none;
@@ -531,6 +532,14 @@ footer {
 
 .fadeIn {
     animation: fadeIn 3s 5s forwards;
+}
+
+.ovContent {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), 
+              url('Assets/blkGradHat.png');
+    background-size:  contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @keyframes fadeInAnimation {
@@ -709,7 +718,7 @@ footer {
     #joinOverlay>.joinContent:nth-child(2) {
         width: 0;
     }
-    #joinBtn {
+    .joinBtn {
         align-self: center;
     }
     footer {

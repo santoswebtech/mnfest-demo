@@ -75,12 +75,14 @@
           <button type="submit" class="btn btn-secondary" disabled>Submit</button>
         </form>
   </aside>
-  <section id="contactHero" class="hero">
-    <div id="contactOverlay" class="heroContent">
-      <div class="heroLeft d-flex flex-column align-items-center align-items-md-start p-3 p-md-5" style="color: white;">
-          <div class="heroTitle">CONTACT</div>
-          <div class="heroSubtitle mt-5 mb-3">Inquiries</div>
-          <p class="heroText" style="margin-top: 1rem;">Manifest Academy is a Las Vegas 501(c)(3) nonprofit providing youth ages 8–19 with artistic discovery, mentorship, publishing education, and public performance opportunities through Manifest Academy Artist Development (MAAD). If you want to refer youth, partner, sponsor, or host an event, we would love to connect.</p>
+  <section id="hero" class="hero">
+    <div id="heroContent" class="heroContent" alt="Manifest Academy Logo">
+      <div class="heroLeft d-flex flex-column align-items-left p-3 p-md-5" style="color: white;">
+          <div class="d-flex align-items-center" style="gap: 10px; margin-bottom: 10px;">
+            <div class="heroTitle">EVENTS</div>
+          </div>
+          <div class="heroSubtitle" style="font-size: .8rem; max-width: 500px;">Sign up for performance opportunities</div>
+          <p class="heroText" style="margin-top: 1rem;">Manifest Academy produces youth-centered showcases and community performances across the Las Vegas Valley. Our events create real stage experience for young artists and celebrate diverse genres and creative expression through MAAD.</p>
           <div class="d-flex flex-column flex-md-row justify-content-md-evenly">
             <a href="" class="heroBtn">DONATE NOW</a>
             <a href="" class="heroBtn" style="background-color: red; color: white; font-weight: 700;">SIGN UP</a>
@@ -88,46 +90,86 @@
       </div>
       <div class="w-50 d-none d-md-block"></div>
     </div>
-    <div id="contactContent" alt="Manifest Academy Logo">
+  </section>
+  <section id="imgTiles" class="d-flex flex-column flex-md-row">
+      <div class="imgTile" style="background-image: url('./Assets/whiteJacketGuitar.webp'); background-position: 0 -30px;"></div>
+      <div class="imgTile" style="background-image: url('./Assets/greyHoodRapper.webp'); background-position: 0 -180px;"></div>
+      <div class="imgTile" style="background-image: url('./Assets/armyPantsSInger.webp'); background-position: 0 -90px;"></div>
+  </section>
+  <style>
+    #concertseries {
+        background: url(Assets/spacecanyon.webp);
+    }
+    #punkseries {
+        background: url(Assets/cementBg.webp);
+    }
+    #spokenseries {
+        background: url(Assets/blueBg.webp);
+    }
+    #djseries {
+        background: url(Assets/blueswirl.webp);
+    }
+    .seriesContent {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+        color: white;
+        padding: 100px 20px;
+        gap: 100px;
+    }
+        @media screen and (max-width: 768px) {
+            .seriesContent {
+                padding: 50px 10px;
+                gap: 50px;
+            }
+        }
+  </style>
+  <section id="concertseries">
+    <div class="seriesContent d-flex flex-column flex-md-row align-items-center justify-content-center">
+        <div class="d-flex flex-column align-items-center align-items-md-start w-md-50">
+            <h2 style="font-family: Vina Sans, sans-serif; font-size: 60px;">CONCERT SERIES</h2>
+            <p style="max-width: 600px;">A high-energy youth concert experience centered on original music and performance. Uprising gives youth artists professional stage exposure, audience engagement, and production standards that prepare them for larger venues.</p>
+            <div id="homeVidThumb" style="background-image: url(./Assets/homeVidThumb.webp);"></div>
+        </div>
+        <div class="d-flex flex-column">
+            <img src="Assets/greenalien-removebg.png" alt="green alien" style="height: 300px;">
+            <img src="Assets/invasionLogo.png" alt="invasion logo" style="height: 75px;">
+        </div>
     </div>
   </section>
-  <section>
-    <div style="padding: 50px 20px;">
-      <div id="formLayoutWrapper">
-        <div id="formContainer">
-          <form action="" method="POST">
-            <div class="mb-3 row">
-              <div class="col">
-                <label for="name" class="form-label">Your Name</label>
-                <input type="name" name="name" class="form-control" id="name" required>
-              </div>
-            </div>
-            <div class="mb-3 row">
-              <div class="col-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" class="form-control" id="email" required>
-              </div>
-              <div class="col-6">
-                <label for="phone" class="form-label">Phone #</label>
-                <input type="phone" name="phone" class="form-control" id="phone" required>
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="description" class="form-label">Description</label>
-              <textarea name="description" id="description" style="height: 150px; width: 100%; border: 1px solid #ced4da;" placeholder="How can we help you today..."></textarea>
-            </div>
-            <button type="submit" id="contactSubmit" class="btn btn-secondary" style="border-radius: 20px; padding: 5px 20px;">Submit <i class="fa-solid fa-paper-plane" style="rotate: 54deg;"></i></button>
-          </form>
+  <section id="punkseries">
+    <div class="seriesContent d-flex flex-column flex-md-row align-items-center justify-content-center" style="background: unset; color: black;">
+        <div class="d-flex flex-column align-items-center align-items-md-start w-md-50">
+            <h2 style="font-family: Vina Sans, sans-serif; font-size: 60px;">PUNK ROCK SERIES</h2>
+            <p style="max-width: 600px;">A high-energy youth concert experience centered on original music and performance. Uprising gives youth artists professional stage exposure, audience engagement, and production standards that prepare them for larger venues.</p>
+            <div id="homeVidThumb" style="background-image: url(./Assets/homeVidThumb.webp);"></div>
         </div>
-        <div id="contactInfo" style="height: 400px; width: 400px; padding-top: 40px;">
-          <h2 style="margin-bottom: 40px;">Contact Us</h2>
-          <p style="margin-bottom: 40px;"><i class="fa-brands fa-instagram" style="color: white; background-color: black; border-radius: 25px; padding: 4px;"></i> @manifest.academy<br></p>
-          <p><i class="fa-regular fa-envelope" style="color: white; background-color: black; border-radius: 25px; padding: 4px;"></i> manifestacademyinfo@gmail.com</p>
-          <div class="triangle"></div>
+        <div class="d-flex flex-column">
+            <img src="Assets/punkSkull.png" alt="punk skull" style="height: 500px;">
         </div>
-      </div>
     </div>
-    <div style="background-color: red; height: 160px;"></div>
+  </section>
+  <section id="spokenseries">
+    <div class="seriesContent d-flex flex-column flex-md-row align-items-center justify-content-center" style="background: unset;">
+        <div class="d-flex flex-column align-items-center align-items-md-start w-md-50">
+            <h2 style="font-family: Vina Sans, sans-serif; font-size: 60px;">SPOKEN WORD SERIES</h2>
+            <p style="max-width: 600px;">A high-energy youth concert experience centered on original music and performance. Uprising gives youth artists professional stage exposure, audience engagement, and production standards that prepare them for larger venues.</p>
+            <div id="homeVidThumb" style="background-image: url(./Assets/homeVidThumb.webp);"></div>
+        </div>
+        <div class="d-flex flex-column">
+            <img src="Assets/gemsLogo.png" alt="gems logo" style="height: 300px;">
+        </div>
+    </div>
+  </section>
+  <section id="djseries">
+    <div class="seriesContent d-flex flex-column flex-md-row align-items-center justify-content-center" style="background: unset;">
+        <div class="d-flex flex-column align-items-center align-items-md-start w-md-50">
+            <h2 style="font-family: Vina Sans, sans-serif; font-size: 60px;">DJ SERIES</h2>
+            <p style="max-width: 600px;">A high-energy youth concert experience centered on original music and performance. Uprising gives youth artists professional stage exposure, audience engagement, and production standards that prepare them for larger venues.</p>
+            <div id="homeVidThumb" style="background-image: url(./Assets/homeVidThumb.webp);"></div>
+        </div>
+        <div class="d-flex flex-column">
+            <img src="Assets/raveLogo.webp" alt="rave logo" style="height: 500px;">
+        </div>
+    </div>
   </section>
   <footer class="d-flex flex-column">
     <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center" style="border-bottom: 2px solid red;">
